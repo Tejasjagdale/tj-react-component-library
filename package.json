@@ -1,6 +1,6 @@
 {
   "name": "tj-react-component-library",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Common Library for all projects i build",
   "main": "src/index.ts",
   "files": [
