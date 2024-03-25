@@ -1,0 +1,37 @@
+{
+  "name": "tj-react-component-library",
+  "version": "0.0.0-development",
+  "description": "Common Library for all projects i build",
+  "main": "src/index.ts",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tejasjagdale/tj-react-component-library.git"
+  },
+  "author": "tejas jagdale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tejasjagdale/tj-react-component-library/issues"
+  },
+  "homepage": "https://github.com/Tejasjagdale/tj-react-component-library#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.4",
+    "@types/react": "^18.2.70",
+    "semantic-release": "^23.0.6"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
+  }
+}
