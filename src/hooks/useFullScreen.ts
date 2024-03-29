@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export const useFullScreen = () => {
+const useFullScreen = () => {
   const fullScreenRef = useRef<HTMLDivElement>(null);
 
   const toggleFullScreen = () => {
@@ -20,3 +20,5 @@ export const useFullScreen = () => {
 
   return { fullScreenRef, toggleFullScreen };
 };
+
+export default useFullScreen
