@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
-    // Default
     "target": "es5",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "isolatedModules": false,
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-
-    // Added
-    "jsx": "react",
-    "module": "ESNext",
-    "declaration": true,
-    "declarationDir": "types",
-    "sourceMap": true,
-    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
-  }
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "paths": {
+      "~/FormGenerator": ["./src/components/FormGenerator"]
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"]
 }

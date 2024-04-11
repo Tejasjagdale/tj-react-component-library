@@ -1,1 +1,2 @@
-export { default as useFullScreen } from "./useFullScreen";
+import useFullScreen from "./useFullScreen";
+export { useFullScreen };
