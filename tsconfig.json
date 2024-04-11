@@ -11,11 +11,12 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "declaration": true,
+    "declarationDir": "./dist",
     "outDir": "./dist",
-    "sourceMap": true,
-    "paths": {
-      "~/FormGenerator": ["./src/components/FormGenerator"]
-    },
+    // "sourceMap": true,
+    // "paths": {
+    //   "~/FormGenerator": ["./src/components/FormGenerator"]
+    // },
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"]
