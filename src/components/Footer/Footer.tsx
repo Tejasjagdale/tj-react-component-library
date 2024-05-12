@@ -1,12 +1,13 @@
+import { FooterProps } from 'components/Types/Footer'
 import React from 'react'
 
-interface FooterProps {
-    msg:string
-}
-
-const Footer = (props:FooterProps) => {
+const Footer = (props: FooterProps) => {
   return (
-    <div>{props.msg}</div>
+    <>
+      <div>{props.msg}</div>
+      <p>footer</p>
+    </>
+
   )
 }
 

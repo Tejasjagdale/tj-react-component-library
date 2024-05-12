@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var react_1 = require("react");
+import { useRef } from "react";
 var useFullScreen = function () {
-    var fullScreenRef = (0, react_1.useRef)(null);
+    var fullScreenRef = useRef(null);
     var toggleFullScreen = function () {
         var element = fullScreenRef.current;
         if (element) {
@@ -18,4 +16,4 @@ var useFullScreen = function () {
     };
     return { fullScreenRef: fullScreenRef, toggleFullScreen: toggleFullScreen };
 };
-exports.default = useFullScreen;
+export default useFullScreen;

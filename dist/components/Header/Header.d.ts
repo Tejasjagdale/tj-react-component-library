@@ -1,6 +1,4 @@
-import React, { ReactElement } from 'react';
-interface HeaderProps {
-    component: React.ComponentType<any>;
-}
+import { HeaderProps } from 'components/Types/Header';
+import { ReactElement } from 'react';
 declare const Header: (props: HeaderProps) => ReactElement;
 export default Header;

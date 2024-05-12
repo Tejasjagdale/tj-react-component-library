@@ -1,27 +1,8 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import { FormGeneratorProps } from 'components/Types/FormGenerator';
 
-type FieldTypes = 'input' | 'radio' | 'checkbox' | 'select'
-
-interface FormFeilds {
-  name: string,
-  label?: string,
-  type?: FieldTypes
-}
-
-interface Section {
-  name: string,
-  label?: string,
-  formFeilds?: FormFeilds[]
-}
-
-interface FormGeneratorProps {
-  name: string,
-  label?: string,
-  Section?: Section[]
-}
-
-const FormGenerator = (data: FormGeneratorProps) => {
+const FormGenerator: React.FC<FormGeneratorProps> = (data) => {
   return (
     <>
       <div>{data.name}</div>
@@ -31,4 +12,4 @@ const FormGenerator = (data: FormGeneratorProps) => {
   )
 }
 
-export default FormGenerator
+export default FormGenerator;

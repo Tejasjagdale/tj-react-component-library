@@ -1,19 +1,4 @@
 import React from 'react';
-type FieldTypes = 'input' | 'radio' | 'checkbox' | 'select';
-interface FormFeilds {
-    name: string;
-    label?: string;
-    type?: FieldTypes;
-}
-interface Section {
-    name: string;
-    label?: string;
-    formFeilds?: FormFeilds[];
-}
-interface FormGeneratorProps {
-    name: string;
-    label?: string;
-    Section?: Section[];
-}
-declare const FormGenerator: (data: FormGeneratorProps) => React.JSX.Element;
+import { FormGeneratorProps } from 'components/Types/FormGenerator';
+declare const FormGenerator: React.FC<FormGeneratorProps>;
 export default FormGenerator;
